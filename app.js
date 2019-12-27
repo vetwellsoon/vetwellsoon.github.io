@@ -35,7 +35,7 @@ var navbar = React.createElement(
           { className: "nav-item mx-0 mx-lg-1" },
           React.createElement(
             "a",
-            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "#about" },
+            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "dashboard.html" },
             "Faq"
           )
         ),
@@ -160,4 +160,6 @@ if (document.getElementById('exploreplan')) {
   ReactDOM.render(exploreplan, document.getElementById('exploreplan'));
 }
 
-ReactDOM.render(footer, document.getElementById('footer'));
+if (document.getElementById('footer')) {
+  ReactDOM.render(footer, document.getElementById('footer'));
+}

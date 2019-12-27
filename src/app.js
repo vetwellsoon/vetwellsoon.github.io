@@ -12,7 +12,7 @@ const navbar = (
             <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="plans.html">View plans</a>
           </li>
           <li className="nav-item mx-0 mx-lg-1">
-            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Faq</a>
+            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="dashboard.html">Faq</a>
           </li>
           <li className="nav-item mx-0 mx-lg-1">
             <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact us</a>
