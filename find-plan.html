@@ -22,6 +22,34 @@
 <body>
   <!-- Navigation -->
   <div id="navbar"></div>
+  <div class="container">
+    <div class="row" style="margin-top: 7rem;">
+      <div class="col-md-6 mb-3">
+        <label for="firstName">Pet Type</label>
+        <div style="height: 0.5rem;"></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label" for="inlineRadio1">Dog</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label" for="inlineRadio2">Cat</label>
+        </div>
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="lastName">Pet Name</label>
+        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <a href="plans.html"><img style="width: 100%;" src="img/wireframe-plan-finder.png"></img></a>
   <!-- <div id="exploreplan"></div> -->
   <div id="footer"></div>
