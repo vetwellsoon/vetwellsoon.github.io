@@ -118,3 +118,13 @@
 #highlights h2 {
   color: #E25822;
 }
+.table-checkmark {
+  font-size: 25px;
+  font-weight: 800;
+  color: #10316B;
+}
+.coverage-label {
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 2px !important;
+}
