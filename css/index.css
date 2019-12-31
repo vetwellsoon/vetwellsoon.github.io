@@ -136,7 +136,7 @@
 .title-dash {
   margin: .5rem auto 2rem;
   border: 0;
-  width: 50rem;
+  width: 100%;
   border-top: 4px solid #E25822;
 }
 .plan-container {
@@ -152,4 +152,8 @@
 .pet-label {
   font-family: 'Oswald', sans-serif;
   font-size: 20px;
+}
+.sm-pet-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
 }
