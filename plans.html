@@ -23,142 +23,197 @@
   <!-- Navigation -->
   <div id="navbar"></div>
 
-  <!-- Portfolio Section -->
-  <section class="page-section portfolio" id="portfolio" style="padding-bottom: 0rem; margin-bottom: 3rem;">
-    <div class="card-body slide-overlay">
-      <h2 style="font-size:60px; font-weight:720; font-family: 'Oswald', sans-serif; color:white;">Better wellness for</h2>
-      <h2 style="font-size:60px; font-family: 'Oswald', sans-serif; color:white;">Your pet, made simple</h2>
-      <a href="find-plan.html"><button style="background-color:#E25822; font-family: 'Oswald', sans-serif; font-size: 25px; border: none; margin-right: 15px; margin-top: 30px; width: 200px; text-transform: uppercase; font-weight: 600;" type="button" class="btn btn-primary">Find a plan</button></a>
-    </div>
-    <img src="img/zig-banner.png" style="width:100%;">
-  </section>
-
-  <h2 class="page-section-heading text-center text-uppercase" style="font-family: 'Oswald', sans-serif; color: #10316B; margin-bottom: 4rem; font-size: 48px;">Three Plans. Find one that works for you!</h2>
-  <div class="container">
-    <table class="table table-hover">
-      <thead>
-        <tr style="font-size: 28px;">
-          <th style="width: 20rem; background-color: rgba(0, 0, 0, 0.075);">Coverage Details</th>
-          <th>Plan 1</th>
-          <th style="background-color: rgba(0, 0, 0, 0.075);">Plan 2</th>
-          <th>Plan 3</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="coverage-label" style="background-color: rgba(0, 0, 0, 0.075)"><div style="margin-top: 3px;">Routine Exams</div></td>
-          <td class="table-checkmark">✓</td>
-          <td class="table-checkmark" style="background-color: rgba(0, 0, 0, 0.075)">✓</td>
-          <td class="table-checkmark">✓</td>
-        </tr>
-        <tr>
-          <td>Vaccinations</td>
-          <td class="table-xmark">🗙</td>
-          <td class="table-checkmark" style="background-color: rgba(0, 0, 0, 0.075)">✓</td>
-          <td class="table-checkmark">✓</td>
-        </tr>
-        <tr>
-          <td>Bloodwork</td>
-          <td>Integer</td>
-          <td>nec</td>
-          <td>odio</td>
-        </tr>
-        <tr>
-          <td>Hereditary issues</td>
-          <td>libero</td>
-          <td>Sed</td>
-          <td>cursus</td>
-        </tr>
-        <tr>
-          <td>Grooming</td>
-          <td>dapibus</td>
-          <td>diam</td>
-          <td>Sed</td>
-        </tr>
-        <tr>
-          <td>Dental Care</td>
-          <td>Nulla</td>
-          <td>quis</td>
-          <td>sem</td>
-        </tr>
-        <tr>
-          <td>We can help you save</td>
-          <td>nibh</td>
-          <td>elementum</td>
-          <td>imperdiet</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <div class="container">
-    <div class="card-deck mb-3 text-center">
-      <div class="card mb-4 shadow-sm" style="visibility:hidden;">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Hidden Tier</h4>
+  <div class="plan-container" id ="plan-container" style="display:none;">
+    <h2 class="page-section-heading text-uppercase mb-3" style="font-family: 'Oswald', sans-serif; color: #10316B; font-size: 48px; padding-top: 3rem;">Plan Finder</h2>
+    <hr class="title-dash">
+    <div class="row">
+      <div class="col-4 mb-3">
+        <label class="pet-label">Pet Type</label>
+        <div style="height: 0.5rem;"></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+          <label class="form-check-label sm-pet-label" for="inlineRadio1">Dog</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+          <label class="form-check-label sm-pet-label" for="inlineRadio2">Cat</label>
+        </div>
+        <div class="invalid-feedback">
+          Valid first name is required.
         </div>
       </div>
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Free</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Basic pet needs</li>
-            <div style="visibility:hidden;">
-              <li>10 GB of storage</li>
-              <li>Priority email support</li>
-              <li>Help center access</li>
-            </div>
-          </ul>
-          <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Sign up for free</button></a>
-        </div>
-      </div>
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Pro</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Basic pet needs</li>
-            <li>Grooming</li>
-            <li>Hereditary issues</li>
-            <li style="visibility:hidden;">Help center access</li>
-          </ul>
-          <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Get started</button></a>
-        </div>
-      </div>
-      <div class="card mb-4 shadow-sm">
-        <div class="card-header">
-          <h4 class="my-0 font-weight-normal">Enterprise</h4>
-        </div>
-        <div class="card-body">
-          <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-          <ul class="list-unstyled mt-3 mb-4">
-            <li>Basic pet needs</li>
-            <li>Grooming</li>
-            <li>Dental issues</li>
-            <li>Full Coverage</li>
-          </ul>
-          <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button></a>
+      <div class="col-7 mb-3">
+        <label class="pet-label">Pet Name</label>
+        <input type="text" class="form-control" id="pet-name" placeholder="" value="" required="">
+        <div class="invalid-feedback">
+          Valid last name is required.
         </div>
       </div>
     </div>
+    <div class="row mb-3" >
+      <div class="col-3">
+        <label class="pet-label">Pet Age (years)</label>
+        <input type="text" class="form-control" id="pet-age" placeholder="" value="" required="">
+        <div class="invalid-feedback">
+          Valid Pet Age is required.
+        </div>
+      </div>
+      <div class="col-3">
+        <label style="visibility:hidden;">Pet Type</label>
+        <div style="height: 0.5rem;"></div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" disabled>
+          <label class="form-check-label sm-pet-label" for="inlineRadio2">years</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" disabled>
+          <label class="form-check-label sm-pet-label" for="inlineRadio1">months</label>
+        </div>
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+      <div class="col-4">
+        <label class="pet-label">Pet Breed</label>
+        <input type="text" class="form-control" id="pet-breed" placeholder="" value="" required="">
+        <div class="invalid-feedback">
+          Valid Pet Breed is required.
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mb-3">
+      <a id="find-plan-submit" href="#"><button style="background-color:#E25822; font-family: 'Oswald', sans-serif; font-size: 25px; border: none; margin-right: 15px; margin-top: 30px; width: 200px; text-transform: uppercase; font-weight: 600;" type="button" class="btn btn-primary">Find a plan</button></a>
+    </div>
   </div>
 
-  <!-- <div class="row">
-    <div class="col-4">.col-4</div>
-    <div class="col-4">.col-4</div>
-    <div class="col-4">.col-4</div>
-  </div> -->
+  <div id="main-plan-page">
+    <section class="page-section portfolio" id="portfolio" style="padding-bottom: 0rem; margin-bottom: 3rem;">
+      <div class="card-body slide-overlay">
+        <h2 style="font-size:60px; font-weight:720; font-family: 'Oswald', sans-serif; color:white;">Better wellness for</h2>
+        <h2 style="font-size:60px; font-family: 'Oswald', sans-serif; color:white;">Your pet, made simple</h2>
+        <a id="plan-helper"><button style="background-color:#E25822; font-family: 'Oswald', sans-serif; font-size: 25px; border: none; margin-right: 15px; margin-top: 30px; width: 200px; text-transform: uppercase; font-weight: 600;" type="button" class="btn btn-primary">Find a plan</button></a>
+      </div>
+      <img src="img/zig-banner.png" style="width:100%;">
+    </section>
 
-  <!-- helps position dog -->
-  <!-- <div id="highlights" style="height:20rem;">
-  </div> -->
+    <h2 class="page-section-heading text-center text-uppercase" style="font-family: 'Oswald', sans-serif; color: #10316B; margin-bottom: 4rem; font-size: 48px;">Three Plans. Find one that works for you!</h2>
+    <div class="container">
+      <table class="table table-hover">
+        <thead>
+          <tr style="font-size: 28px;">
+            <th style="width: 20rem; background-color: rgba(0, 0, 0, 0.075);">Coverage Details</th>
+            <th>Plan 1</th>
+            <th style="background-color: rgba(0, 0, 0, 0.075);">Plan 2</th>
+            <th>Plan 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="coverage-label" style="background-color: rgba(0, 0, 0, 0.075)"><div style="margin-top: 3px;">Routine Exams</div></td>
+            <td class="table-checkmark">✓</td>
+            <td class="table-checkmark" style="background-color: rgba(0, 0, 0, 0.075)">✓</td>
+            <td class="table-checkmark">✓</td>
+          </tr>
+          <tr>
+            <td>Vaccinations</td>
+            <td class="table-xmark">🗙</td>
+            <td class="table-checkmark" style="background-color: rgba(0, 0, 0, 0.075)">✓</td>
+            <td class="table-checkmark">✓</td>
+          </tr>
+          <tr>
+            <td>Bloodwork</td>
+            <td>Integer</td>
+            <td>nec</td>
+            <td>odio</td>
+          </tr>
+          <tr>
+            <td>Hereditary issues</td>
+            <td>libero</td>
+            <td>Sed</td>
+            <td>cursus</td>
+          </tr>
+          <tr>
+            <td>Grooming</td>
+            <td>dapibus</td>
+            <td>diam</td>
+            <td>Sed</td>
+          </tr>
+          <tr>
+            <td>Dental Care</td>
+            <td>Nulla</td>
+            <td>quis</td>
+            <td>sem</td>
+          </tr>
+          <tr>
+            <td>We can help you save</td>
+            <td>nibh</td>
+            <td>elementum</td>
+            <td>imperdiet</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 
-  <div id="exploreplan"></div>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm" style="visibility:hidden;">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Hidden Tier</h4>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Free</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Basic pet needs</li>
+              <div style="visibility:hidden;">
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </div>
+            </ul>
+            <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Sign up for free</button></a>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Basic pet needs</li>
+              <li>Grooming</li>
+              <li>Hereditary issues</li>
+              <li style="visibility:hidden;">Help center access</li>
+            </ul>
+            <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Get started</button></a>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">Enterprise</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Basic pet needs</li>
+              <li>Grooming</li>
+              <li>Dental issues</li>
+              <li>Full Coverage</li>
+            </ul>
+            <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="exploreplan"></div>
+  </div>
+
   <div id="footer"></div>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
@@ -172,6 +227,7 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
   <script src="app.js"></script>
+  <script src="form.js"></script>
 </body>
 
 </html>
