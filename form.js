@@ -1,7 +1,13 @@
 // Not sure to use PHP or Javascript here
 // A $( document ).ready() block.
 
-//
+// don't want to use ?id=
+if (window.location.hash == "#find-plan") {
+  document.getElementById("plan-container").style.display = "block"
+  document.getElementsByTagName("body")[0].style.backgroundColor = "#10316B";
+  document.getElementById("main-plan-page").style.display = "none";
+}
+console.log(window.location.hash)
 document.getElementById('plan-helper').onclick = function(){
   document.getElementById("plan-container").style.display = "block"
   document.getElementsByTagName("body")[0].style.backgroundColor = "#10316B";
