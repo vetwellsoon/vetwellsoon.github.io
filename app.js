@@ -139,7 +139,7 @@ var exploreplan = React.createElement(
       { className: "mt-4" },
       React.createElement(
         "a",
-        { className: "btn btn-xl btn-outline-light", style: { backgroundColor: 'white', color: 'black', fontFamily: '"Oswald", sans-serif', fontSize: '25px', fontWeight: 400, marginLeft: '-20px' }, href: "#" },
+        { className: "btn btn-xl btn-outline-light", style: { backgroundColor: 'white', color: 'black', fontFamily: '"Oswald", sans-serif', fontSize: '25px', fontWeight: 400, marginLeft: '-20px' }, href: "plans.html" },
         "Explore plans >>"
       )
     )
