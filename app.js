@@ -44,8 +44,8 @@ var navbar = React.createElement(
           { className: "nav-item mx-0 mx-lg-1" },
           React.createElement(
             "a",
-            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "dashboard.html" },
-            "Contact us"
+            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "#contact" },
+            "Login"
           )
         ),
         React.createElement(
@@ -53,8 +53,9 @@ var navbar = React.createElement(
           { className: "nav-item mx-0 mx-lg-1" },
           React.createElement(
             "a",
-            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "#contact" },
-            "Login"
+            // dashboard.html
+            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon" },
+            "Contact us"
           )
         )
       )
@@ -83,14 +84,14 @@ var footer = React.createElement(
       ),
       React.createElement(
         "h5",
-        { style: { marginRight: '3rem' } },
-        "FAQ"
+        null,
+        "LOGIN"
       ),
       React.createElement(
         "h5",
-        null,
-        "LOGIN"
-      )
+        { style: { marginRight: '3rem' } },
+        "FAQ"
+      ),
     ),
     React.createElement(
       "div",
