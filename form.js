@@ -18,6 +18,7 @@ document.getElementById('plan-helper').onclick = function(){
 };
 
 document.getElementById('find-plan-submit').onclick = function(){
+  var petType = "";
   if (document.getElementById("type-dog").checked) {
     petType = "dog"
   } else if (document.getElementById("type-cat").checked) {
@@ -30,10 +31,10 @@ document.getElementById('find-plan-submit').onclick = function(){
     "petBreed": document.getElementById('pet-breed').value,
     "petType": petType
   }
-  console.log(data)
+  console.log('run these commands' + data)
 
   // set proper plan type here
-  document.getElementById("plan-container").style.display = "none"
+  document.getElementById("plan-container").style.display = "none";
   document.getElementsByTagName("body")[0].style.backgroundColor = "white";
   document.getElementById("main-plan-page").style.display = "block";
 };
