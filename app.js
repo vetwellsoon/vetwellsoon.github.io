@@ -147,13 +147,17 @@ var exploreplan = React.createElement(
   )
 );
 
-window.__be = window.__be || {};
-window.__be.id = "5e2e31cd2e39930008b76c93";
-(function() {
-    var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-    be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-})();
+// makes sure not running on local machine
+if (document.location.protocol != "file:") {
+  window.__be = window.__be || {};
+  // change this window id as needed for new accounts
+  window.__be.id = "5e2e31cd2e39930008b76c93";
+  (function() {
+      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
+      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
+  })();
+}
 
 ReactDOM.render(navbar, document.getElementById('navbar'));
 

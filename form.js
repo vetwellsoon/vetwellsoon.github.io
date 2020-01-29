@@ -31,9 +31,11 @@ document.getElementById('find-plan-submit').onclick = function(){
     "petBreed": document.getElementById('pet-breed').value,
     "petType": petType
   }
-  console.log('run these commands' + data)
+
+  console.log(data);
 
   // set proper plan type here
+  // href link blocks the show
   document.getElementById("plan-container").style.display = "none";
   document.getElementsByTagName("body")[0].style.backgroundColor = "white";
   document.getElementById("main-plan-page").style.display = "block";
