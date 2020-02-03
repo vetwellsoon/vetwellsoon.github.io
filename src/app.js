@@ -28,19 +28,21 @@ const navbar = (
 
 const footer = (
   <section style={{backgroundColor: '#C8C8C8'}}>
-    {/* style="padding-bottom: 3rem; padding-top: 3rem;" */}
     <footer className="container py-5">
       <div className="row">
-        <h5 style={{marginRight: '3rem'}}>BLOG</h5>
-        <h5 style={{marginRight: '3rem'}}>CONTACT US</h5>
-        <h5 style={{marginRight: '3rem'}}>FAQ</h5>
-        <h5>LOGIN</h5>
+        <a href="dashboard.html"><h5 style={{marginRight: '3rem'}}>Dashboard</h5></a>
+        <a href="faq.html">
+          <h5 style={{marginRight: '3rem'}}>FAQ</h5>
+        </a>
+        <a href="#"><h5 style={{marginRight: '3rem'}}>LOGIN</h5></a>
+        <a href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon"><h5 style={{}}>CONTACT US</h5></a>
       </div>
       <div className="form-group row" style={{marginTop: '2rem'}}>
-        <label htmlFor="staticEmail" className="col-form-label"><h5>Subscribe to our newsletter </h5></label>
+        <label htmlFor="staticEmail" className="col-form-label">
+          <h5>Subscribe to our newsletter </h5>
+        </label>
         <div className="col-sm-4" style={{display: 'flex'}}>
           <input type="text" className="form-control" id="staticEmail" defaultValue="Email address" />
-          {/* font-weight: 400; */}
           <button style={{backgroundColor: '#E25822', fontFamily: '"Oswald", sans-serif', fontSize: '20px', border: 'none', width: '150px', padding: 0, height: '38px', marginTop: '2px'}} type="button" className="btn btn-primary">Subscribe</button>
         </div>
       </div>
