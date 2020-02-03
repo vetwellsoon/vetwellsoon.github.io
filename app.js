@@ -53,7 +53,6 @@ var navbar = React.createElement(
           { className: "nav-item mx-0 mx-lg-1" },
           React.createElement(
             "a",
-            // dashboard.html
             { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon" },
             "Contact us"
           )
@@ -85,13 +84,13 @@ var footer = React.createElement(
       React.createElement(
         "h5",
         { style: { marginRight: '3rem' } },
-        "LOGIN"
+        "FAQ"
       ),
       React.createElement(
         "h5",
-        { style: { marginRight: '3rem' } },
-        "FAQ"
-      ),
+        null,
+        "LOGIN"
+      )
     ),
     React.createElement(
       "div",
@@ -140,24 +139,12 @@ var exploreplan = React.createElement(
       { className: "mt-4" },
       React.createElement(
         "a",
-        { className: "btn btn-xl btn-outline-light", style: { backgroundColor: 'white', color: 'black', fontFamily: '"Oswald", sans-serif', fontSize: '25px', fontWeight: 400, marginLeft: '-20px' }, href: "plans.html" },
+        { className: "btn btn-xl btn-outline-light", style: { backgroundColor: 'white', color: 'black', fontFamily: '"Oswald", sans-serif', fontSize: '25px', fontWeight: 400, marginLeft: '-20px' }, href: "#" },
         "Explore plans >>"
       )
     )
   )
 );
-
-// makes sure not running on local machine
-if (document.location.protocol != "file:") {
-  window.__be = window.__be || {};
-  // change this window id as needed for new accounts
-  window.__be.id = "5e2e31cd2e39930008b76c93";
-  (function() {
-      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-  })();
-}
 
 ReactDOM.render(navbar, document.getElementById('navbar'));
 
@@ -165,6 +152,4 @@ if (document.getElementById('exploreplan')) {
   ReactDOM.render(exploreplan, document.getElementById('exploreplan'));
 }
 
-if (document.getElementById('footer')) {
-  ReactDOM.render(footer, document.getElementById('footer'));
-}
+ReactDOM.render(footer, document.getElementById('footer'));

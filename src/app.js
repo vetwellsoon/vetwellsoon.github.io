@@ -15,10 +15,10 @@ const navbar = (
             <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="faq.html">Faq</a>
           </li>
           <li className="nav-item mx-0 mx-lg-1">
-            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="dashboard.html">Contact us</a>
+            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Login</a>
           </li>
           <li className="nav-item mx-0 mx-lg-1">
-            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Login</a>
+            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon">Contact us</a>
           </li>
         </ul>
       </div>
