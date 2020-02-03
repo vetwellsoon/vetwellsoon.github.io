@@ -84,7 +84,7 @@ var footer = React.createElement(
       ),
       React.createElement(
         "h5",
-        null,
+        { style: { marginRight: '3rem' } },
         "LOGIN"
       ),
       React.createElement(
