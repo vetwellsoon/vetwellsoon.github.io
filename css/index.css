@@ -1,3 +1,9 @@
+.card.mb-4.shadow-sm.monthly-sub {
+  display: none;
+}
+.annual-sub {
+  /* display: none !important; *.
+}
 .portfolio .portfolio-item .portfolio-item-caption {
   background-color: rgb(255,255,255,0);
 }

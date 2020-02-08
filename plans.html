@@ -160,59 +160,101 @@
 
     <div class="container">
       <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm" style="visibility:hidden;">
+        <div id="duration-toggle" class="card mb-4 shadow-sm" style="">
           <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Hidden Tier</h4>
+            <h4 id="title-toggle" class="my-0 font-weight-normal">Pay Monthly</h4>
           </div>
         </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Basic Coverage</h4>
+          <div class="card mb-4 shadow-sm monthly-sub">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Basic Coverage</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$100 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Basic pet needs</li>
+                <div style="visibility:hidden;">
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </div>
+              </ul>
+            </div>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$100 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Basic pet needs</li>
-              <div style="visibility:hidden;">
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-              </div>
-            </ul>
-            <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Sign up for free</button></a>
+          <div class="card mb-4 shadow-sm monthly-sub">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Heavy Coverage</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$200 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Basic pet needs</li>
+                <li>Grooming</li>
+                <li>Hereditary issues</li>
+                <li style="visibility:hidden;">Help center access</li>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Heavy Coverage</h4>
+          <div class="card mb-4 shadow-sm monthly-sub">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Full Coverage</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$300 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Basic pet needs</li>
+                <li>Grooming</li>
+                <li>Dental issues</li>
+                <li>Full Coverage</li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$200 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Basic pet needs</li>
-              <li>Grooming</li>
-              <li>Hereditary issues</li>
-              <li style="visibility:hidden;">Help center access</li>
-            </ul>
-            <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Get started</button></a>
+
+          <div class="card mb-4 shadow-sm annual-sub">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Basic Coverage</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$1000 <small class="text-muted">/ Year</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Basic pet needs</li>
+                <div style="visibility:hidden;">
+                  <li>10 GB of storage</li>
+                  <li>Priority email support</li>
+                  <li>Help center access</li>
+                </div>
+              </ul>
+            </div>
           </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-          <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Full Coverage</h4>
+          <div class="card mb-4 shadow-sm annual-sub">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Heavy Coverage</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$2000 <small class="text-muted">/ Year</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Basic pet needs</li>
+                <li>Grooming</li>
+                <li>Hereditary issues</li>
+                <li style="visibility:hidden;">Help center access</li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body">
-            <h1 class="card-title pricing-card-title">$300 <small class="text-muted">/ mo</small></h1>
-            <ul class="list-unstyled mt-3 mb-4">
-              <li>Basic pet needs</li>
-              <li>Grooming</li>
-              <li>Dental issues</li>
-              <li>Full Coverage</li>
-            </ul>
-            <div id='product-component-1581112300173'></div>
-            <!-- <a href="signup.html"><button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button></a> -->
+          <div class="card mb-4 shadow-sm annual-sub">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Full Coverage</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$3000 <small class="text-muted">/ Year</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Basic pet needs</li>
+                <li>Grooming</li>
+                <li>Dental issues</li>
+                <li>Full Coverage</li>
+              </ul>
+            </div>
           </div>
-        </div>
+        <div id='collection-component-1581184864873'></div>
       </div>
     </div>
 
@@ -232,7 +274,7 @@
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
 
   <script src="app.js"></script>
-  <script src="form.js"></script>
+  <script src="plan.js"></script>
 </body>
 
 </html>
