@@ -1,5 +1,5 @@
 (function () {
-  var scriptURL = 'buy-button-storefront.min.js';
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
   if (window.ShopifyBuy) {
     if (window.ShopifyBuy.UI) {
       ShopifyBuyInit();
@@ -24,7 +24,7 @@
     ShopifyBuy.UI.onReady(client).then(function (ui) {
       ui.createComponent('collection', {
         id: '166783025196',
-        node: document.getElementById('collection-component-1581184864873'),
+        node: document.getElementById('collection-component-1581190310954'),
         moneyFormat: '%24%7B%7Bamount%7D%7D',
         options: {
   "product": {
@@ -32,21 +32,9 @@
       "product": {
         "@media (min-width: 601px)": {
           "max-width": "calc(25% - 20px)",
-          "margin-left": "20px",
+          "margin-left": "40px",
           "margin-bottom": "50px",
           "width": "calc(25% - 20px)"
-        },
-        "img": {
-          "height": "calc(100% - 15px)",
-          "position": "absolute",
-          "left": "0",
-          "right": "0",
-          "top": "0"
-        },
-        "imgWrapper": {
-          "padding-top": "calc(75% + 15px)",
-          "position": "relative",
-          "height": "0"
         }
       },
       "button": {
@@ -68,7 +56,7 @@
     "styles": {
       "products": {
         "@media (min-width: 601px)": {
-          "margin-left": "-20px"
+          "margin-left": "18rem"
         }
       }
     }

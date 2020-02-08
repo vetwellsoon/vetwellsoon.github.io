@@ -3,10 +3,17 @@ document.getElementById('duration-toggle').onclick = function(){
     var cardHide = document.getElementsByClassName("monthly-sub");
     var cardShow = document.getElementsByClassName("annual-sub");
     document.getElementById('title-toggle').innerHTML = "Pay Monthly";
+
+    document.getElementById('annual-text').style.display = "block";
+    document.getElementById('monthly-text').style.display = "none";
   } else {
+    console.log('inital state')
     var cardHide = document.getElementsByClassName("annual-sub");
     var cardShow = document.getElementsByClassName("monthly-sub");
-    document.getElementById('title-toggle').innerHTML = "Pay Annually";    
+    document.getElementById('title-toggle').innerHTML = "Pay Annually";
+
+    document.getElementById('annual-text').style.display = "none";
+    document.getElementById('monthly-text').style.display = "block";
   }
 
   for (var i=0; i<3; i++) {
