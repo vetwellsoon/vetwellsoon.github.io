@@ -44,7 +44,7 @@ var navbar = React.createElement(
           { className: "nav-item mx-0 mx-lg-1" },
           React.createElement(
             "a",
-            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "#contact" },
+            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "login.html" },
             "Login"
           )
         ),
