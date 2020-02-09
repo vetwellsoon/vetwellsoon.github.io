@@ -4,12 +4,24 @@ document.getElementById('login-submit').onclick = function(){
     "password": document.getElementById('login-password').value
   }
 
-  var payload = "https://vet-backend-3.herokuapp.com/api/user/" + document.getElementById('login-email').value + "?apiKey=" + envKey;
+  var site = "https://vet-backend-3.herokuapp.com";
+  // var site = "http://localhost:5000"
+
+  var email = document.getElementById('login-email').value;
+  var payload = site + "/api/user/" + email + "?apiKey=" + envKey;
   console.log(payload);
   const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
-      if(xhr.readyState == 4 && xhr.status == 200) {
-          console.log(xhr.responseText);
+      // ready state is last state with response?
+      if (xhr.readyState == 4) {
+        if(xhr.status == 200) {
+          console.log(JSON.parse(xhr.response));
+          localStorage.setItem("email", email);
+          document.getElementById('profileImg').style.display = "block";
+          document.getElementById('login-nav').style.display = "none";
+        } else {
+          console.log(xhr)
+        }
       }
     };
     xhr.open("GET", payload, true);

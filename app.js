@@ -41,7 +41,7 @@ var navbar = React.createElement(
         ),
         React.createElement(
           "li",
-          { className: "nav-item mx-0 mx-lg-1" },
+          { id: "login-nav", className: "nav-item mx-0 mx-lg-1" },
           React.createElement(
             "a",
             { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "login.html" },
@@ -56,7 +56,8 @@ var navbar = React.createElement(
             { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon" },
             "Contact us"
           )
-        )
+        ),
+        React.createElement("img", { id: "profileImg", style: { height: '3rem', borderRadius: '50%', marginRight: '1.5rem', display: 'none' }, src: "img/pug.jpg" })
       )
     )
   )
@@ -162,24 +163,21 @@ var exploreplan = React.createElement(
   )
 );
 
-// makes sure not running on local machine
-if (document.location.protocol != "file:") {
-  window.__be = window.__be || {};
-  // change this window id as needed for new accounts
-  window.__be.id = "5e2e31cd2e39930008b76c93";
-  (function() {
-      var be = document.createElement('script'); be.type = 'text/javascript'; be.async = true;
-      be.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.chatbot.com/widget/plugin.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(be, s);
-  })();
-}
-
 ReactDOM.render(navbar, document.getElementById('navbar'));
 
 if (document.getElementById('exploreplan')) {
   ReactDOM.render(exploreplan, document.getElementById('exploreplan'));
 }
 
-if (document.getElementById('footer')) {
-  ReactDOM.render(footer, document.getElementById('footer'));
+ReactDOM.render(footer, document.getElementById('footer'));
+
+if (localStorage.getItem("email")) {
+  document.getElementById('profileImg').style.display = "block";
+  document.getElementById('login-nav').style.display = "none";
 }
+
+document.getElementById('profileImg').onclick = function () {
+  document.getElementById('profileImg').style.display = "none";
+  document.getElementById('login-nav').style.display = "block";
+  localStorage.removeItem("email");
+};

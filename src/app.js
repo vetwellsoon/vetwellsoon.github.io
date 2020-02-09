@@ -14,12 +14,13 @@ const navbar = (
           <li className="nav-item mx-0 mx-lg-1">
             <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="faq.html">Faq</a>
           </li>
-          <li className="nav-item mx-0 mx-lg-1">
+          <li id="login-nav" className="nav-item mx-0 mx-lg-1">
             <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login.html">Login</a>
           </li>
           <li className="nav-item mx-0 mx-lg-1">
             <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon">Contact us</a>
           </li>
+          <img id="profileImg" style={{height: '3rem', borderRadius: '50%', marginRight: '1.5rem', display: 'none'}} src="img/pug.jpg" />
         </ul>
       </div>
     </div>
@@ -75,3 +76,15 @@ if (document.getElementById('exploreplan')) {
 }
 
 ReactDOM.render(footer, document.getElementById('footer'));
+
+if (localStorage.getItem("email")) {
+  document.getElementById('profileImg').style.display = "block";
+  document.getElementById('login-nav').style.display = "none";
+}
+
+document.getElementById('profileImg').onclick = function(){
+  document.getElementById('profileImg').style.display = "none";
+  document.getElementById('login-nav').style.display = "block";
+  localStorage.removeItem("email");
+
+}
