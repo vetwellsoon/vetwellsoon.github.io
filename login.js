@@ -15,10 +15,9 @@ document.getElementById('login-submit').onclick = function(){
       // ready state is last state with response?
       if (xhr.readyState == 4) {
         if(xhr.status == 200) {
-          console.log(JSON.parse(xhr.response));
+          // console.log(JSON.parse(xhr.response));
           localStorage.setItem("email", email);
-          document.getElementById('profileImg').style.display = "block";
-          document.getElementById('login-nav').style.display = "none";
+          window.location.href = 'profile.html';
         } else {
           console.log(xhr)
         }
