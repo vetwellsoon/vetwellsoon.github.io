@@ -1,3 +1,14 @@
+#highlight-plan {
+  width: 14rem;
+  margin-left: 37.6rem;
+  height: 26px;
+  background: #e25822;
+  color: #fff;
+  border: 2px solid #e25822;
+  border-radius: 6px 6px 0 0;
+  box-sizing: content-box;
+  text-align: center;
+}
 .card.mb-4.shadow-sm.monthly-sub {
   display: none;
 }

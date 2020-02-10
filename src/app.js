@@ -86,5 +86,4 @@ document.getElementById('profileImg').onclick = function(){
   document.getElementById('profileImg').style.display = "none";
   document.getElementById('login-nav').style.display = "block";
   localStorage.removeItem("email");
-
 }

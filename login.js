@@ -9,7 +9,7 @@ document.getElementById('login-submit').onclick = function(){
 
   var email = document.getElementById('login-email').value;
   var payload = site + "/api/user/" + email + "?apiKey=" + envKey;
-  console.log(payload);
+  // console.log(payload);
   const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
       // ready state is last state with response?
@@ -27,5 +27,5 @@ document.getElementById('login-submit').onclick = function(){
     xhr.open("GET", payload, true);
     xhr.send();
 
-  console.log(data);
+  // console.log(data);
 }
