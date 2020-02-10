@@ -169,7 +169,9 @@ if (document.getElementById('exploreplan')) {
   ReactDOM.render(exploreplan, document.getElementById('exploreplan'));
 }
 
-ReactDOM.render(footer, document.getElementById('footer'));
+if (document.getElementById('footer')) {
+  ReactDOM.render(footer, document.getElementById('footer'));
+}
 
 if (localStorage.getItem("email")) {
   document.getElementById('profileImg').style.display = "block";
