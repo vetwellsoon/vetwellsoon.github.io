@@ -53,11 +53,15 @@ var navbar = React.createElement(
           { className: "nav-item mx-0 mx-lg-1" },
           React.createElement(
             "a",
-            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon" },
+            { className: "nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger", href: "#footer" },
             "Contact us"
           )
         ),
-        React.createElement("img", { id: "profileImg", style: { height: '3rem', borderRadius: '50%', marginRight: '1.5rem', display: 'none' }, src: "img/pug.jpg" })
+        React.createElement(
+          "a",
+          { href: "profile.html" },
+          React.createElement("img", { id: "profileImg", style: { height: '3rem', borderRadius: '50%', marginRight: '1.5rem', display: 'none' }, src: "img/pug.jpg" })
+        )
       )
     )
   )
@@ -92,20 +96,47 @@ var footer = React.createElement(
       ),
       React.createElement(
         "a",
-        { href: "#" },
+        { href: "login.html" },
         React.createElement(
           "h5",
           { style: { marginRight: '3rem' } },
-          "LOGIN"
+          "Login"
         )
       ),
       React.createElement(
         "a",
-        { href: "mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon" },
+        { href: "plans.html" },
         React.createElement(
           "h5",
           { style: {} },
-          "CONTACT US"
+          "View Plans"
+        )
+      ),
+      React.createElement(
+        "div",
+        { id: "contact", style: { position: 'absolute', right: '2rem' } },
+        React.createElement(
+          "div",
+          null,
+          React.createElement(
+            "h5",
+            null,
+            "Contact Us:"
+          ),
+          React.createElement(
+            "p",
+            null,
+            React.createElement("i", { className: "icon-phone" }),
+            " (123) 456-7890 - (123) 555-8890",
+            React.createElement("br", null),
+            React.createElement("i", { className: "icon-envelope-alt" }),
+            " ",
+            React.createElement(
+              "a",
+              { style: { textDecoration: 'underline' }, href: "mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon" },
+              "RIdiculla@newportcapitalgroup.com"
+            )
+          )
         )
       )
     ),
@@ -130,6 +161,16 @@ var footer = React.createElement(
           { style: { backgroundColor: '#E25822', fontFamily: '"Oswald", sans-serif', fontSize: '20px', border: 'none', width: '150px', padding: 0, height: '38px', marginTop: '2px' }, type: "button", className: "btn btn-primary" },
           "Subscribe"
         )
+      )
+    ),
+    React.createElement(
+      "div",
+      { className: "footer-copyright text-center", style: { paddingTop: '1rem' } },
+      "\xA9 2020 Copyright:",
+      React.createElement(
+        "a",
+        { href: "https://mdbootstrap.com/education/bootstrap/" },
+        " VetWellSoon"
       )
     )
   )
@@ -177,9 +218,3 @@ if (localStorage.getItem("email")) {
   document.getElementById('profileImg').style.display = "block";
   document.getElementById('login-nav').style.display = "none";
 }
-
-document.getElementById('profileImg').onclick = function () {
-  document.getElementById('profileImg').style.display = "none";
-  document.getElementById('login-nav').style.display = "block";
-  localStorage.removeItem("email");
-};

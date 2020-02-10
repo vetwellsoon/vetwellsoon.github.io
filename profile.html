@@ -43,6 +43,7 @@
       <div class="col-12" style="display:flex;">
         <h4 class="profile-space">Pet Name:</h4>
         <p class="profile-space" id="">Ziggy</p> <a href="#" style="text-decoration: underline;">Edit</a>
+      <div id="sign-out" style="position: absolute; right:8rem;"><a href="#" style="text-decoration: underline;">Sign Out</a></div>
       </div>
       <div class="col-12" style="display:flex;">
         <h4 class="profile-space">Pet Type:</h4>
@@ -59,51 +60,22 @@
     </section>
   </div>
 
-
-
   <!-- helps position dog -->
   <div style="height:20rem;"></div>
 
   <div id="exploreplan"></div>
-  <!-- <div id="footer"></div> -->
-  <section style="background-color: #C8C8C8;">
-    <footer class="container py-5">
-      <div class="row">
-        <a href="dashboard.html"><h5 style="margin-right: 3rem;">Dashboard</h5></a>
-        <a href="faq.html">
-          <h5 style="margin-right: 3rem;">FAQ</h5>
-        </a>
-        <a href="#"><h5 style="margin-right: 3rem;">LOGIN</h5></a>
-        <a href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon"><h5 style="">CONTACT US</h5></a>
-        <div id="contact" style="position: absolute; right: 2rem;">
-          <div class="widget">
-            <h5>Contact Us:</h5>
-            <p>
-              <i class="icon-phone"></i> (123) 456-7890 - (123) 555-8890<br>
-              <i class="icon-envelope-alt"></i> email@domainname.com
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="form-group row" style="margin-top: 2rem;">
-        <label for="staticEmail" class="col-form-label">
-          <h5>Subscribe to our newsletter </h5>
-        </label>
-        <div class="col-sm-4" style="display:flex;">
-          <input type="text" class="form-control" id="staticEmail" value="Email address">
-          <button style="background-color:#E25822; font-family: 'Oswald', sans-serif; font-size: 20px; border: none; width: 150px; padding: 0; height: 38px; margin-top: 2px;" type="button" class="btn btn-primary">Subscribe</button>
-        </div>
-      </div>
-      <!-- Copyright -->
-    <div class="footer-copyright text-center" style="padding-top: 1rem;">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> VetWellSoon</a>
-    </div>
-    <!-- Copyright -->
-    </footer>
-  </section>
+  <div id="footer"></div>
 
   <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>
+  <script>
+    document.getElementById('sign-out').onclick = function(){
+      document.getElementById('profileImg').style.display = "none";
+      document.getElementById('login-nav').style.display = "block";
+      localStorage.removeItem("email");
+    }
+  </script>
+
 
   <script src="app.js"></script>
 </body>

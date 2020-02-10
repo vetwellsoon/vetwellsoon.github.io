@@ -18,9 +18,9 @@ const navbar = (
             <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="login.html">Login</a>
           </li>
           <li className="nav-item mx-0 mx-lg-1">
-            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon">Contact us</a>
+            <a className="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#footer">Contact us</a>
           </li>
-          <img id="profileImg" style={{height: '3rem', borderRadius: '50%', marginRight: '1.5rem', display: 'none'}} src="img/pug.jpg" />
+          <a href="profile.html"><img id="profileImg" style={{height: '3rem', borderRadius: '50%', marginRight: '1.5rem', display: 'none'}} src="img/pug.jpg" /></a>
         </ul>
       </div>
     </div>
@@ -35,8 +35,15 @@ const footer = (
         <a href="faq.html">
           <h5 style={{marginRight: '3rem'}}>FAQ</h5>
         </a>
-        <a href="#"><h5 style={{marginRight: '3rem'}}>LOGIN</h5></a>
-        <a href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon"><h5 style={{}}>CONTACT US</h5></a>
+        <a href="login.html"><h5 style={{marginRight: '3rem'}}>Login</h5></a>
+        <a href="plans.html"><h5 style={{}}>View Plans</h5></a>
+        <div id="contact" style={{position: 'absolute', right: '2rem'}}>
+          <div>
+            <h5>Contact Us:</h5>
+            <p><i className="icon-phone" /> (123) 456-7890 - (123) 555-8890<br />
+              <i className="icon-envelope-alt" /> <a style={{textDecoration: 'underline'}} href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon">RIdiculla@newportcapitalgroup.com</a></p>
+          </div>
+        </div>
       </div>
       <div className="form-group row" style={{marginTop: '2rem'}}>
         <label htmlFor="staticEmail" className="col-form-label">
@@ -46,6 +53,9 @@ const footer = (
           <input type="text" className="form-control" id="staticEmail" defaultValue="Email address" />
           <button style={{backgroundColor: '#E25822', fontFamily: '"Oswald", sans-serif', fontSize: '20px', border: 'none', width: '150px', padding: 0, height: '38px', marginTop: '2px'}} type="button" className="btn btn-primary">Subscribe</button>
         </div>
+      </div>
+      <div className="footer-copyright text-center" style={{paddingTop: '1rem'}}>© 2020 Copyright:
+        <a href="https://mdbootstrap.com/education/bootstrap/"> VetWellSoon</a>
       </div>
     </footer>
   </section>
@@ -82,10 +92,4 @@ if (document.getElementById('footer')) {
 if (localStorage.getItem("email")) {
   document.getElementById('profileImg').style.display = "block";
   document.getElementById('login-nav').style.display = "none";
-}
-
-document.getElementById('profileImg').onclick = function(){
-  document.getElementById('profileImg').style.display = "none";
-  document.getElementById('login-nav').style.display = "block";
-  localStorage.removeItem("email");
 }
