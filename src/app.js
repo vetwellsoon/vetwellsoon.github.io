@@ -61,7 +61,7 @@ const exploreplan = (
       </div>
       {/* About Section Button */}
       <div className="mt-4">
-        <a className="btn btn-xl btn-outline-light" style={{backgroundColor: 'white', color: 'black', fontFamily: '"Oswald", sans-serif', fontSize: '25px', fontWeight: 400, marginLeft: '-20px'}} href="#">
+        <a className="btn btn-xl btn-outline-light" style={{backgroundColor: 'white', color: 'black', fontFamily: '"Oswald", sans-serif', fontSize: '25px', fontWeight: 400, marginLeft: '-20px'}} href="plans.html#find-plan">
           Explore plans &gt;&gt;
         </a>
       </div>

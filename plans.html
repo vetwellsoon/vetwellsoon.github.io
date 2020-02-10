@@ -48,20 +48,21 @@
       </div>
       <div class="col-7 mb-3">
         <label class="pet-label">Pet Name</label>
-        <input type="text" class="form-control" id="pet-name" placeholder="" value="" required="">
+        <input type="text" class="form-control" id="pet-name" placeholder="" value="Ziggy" required="">
         <div class="invalid-feedback">
           Valid last name is required.
         </div>
       </div>
     </div>
     <div class="row mb-3" >
-      <div class="col-3">
-        <label class="pet-label">Pet Age (years)</label>
-        <input type="text" class="form-control" id="pet-age" placeholder="" value="" required="">
+      <div class="col-6">
+        <label class="pet-label">Pet Age (months)</label>
+        <input type="text" class="form-control" id="pet-age" placeholder="" value="15" required="">
         <div class="invalid-feedback">
           Valid Pet Age is required.
         </div>
       </div>
+      <!-- Radio buttons
       <div class="col-3">
         <label style="visibility:hidden;">Pet Type</label>
         <div style="height: 0.5rem;"></div>
@@ -76,10 +77,16 @@
         <div class="invalid-feedback">
           Valid first name is required.
         </div>
-      </div>
-      <div class="col-4">
+      </div> -->
+      <div class="col-6">
         <label class="pet-label">Pet Breed</label>
-        <input type="text" class="form-control" id="pet-breed" placeholder="" value="" required="">
+        <select class="form-control" id="pet-breed">
+          <option value="gRetriever">Golden Retriever</option>
+          <option value="chihu">Chihuahua</option>
+          <option value="lRetriever">Labrador Retriever</option>
+          <option value="sInu">Shiba Inu</option>
+        </select>
+        <!-- <input type="text" class="form-control" id="pet-breed" placeholder="" value="" required=""> -->
         <div class="invalid-feedback">
           Valid Pet Breed is required.
         </div>
@@ -161,7 +168,7 @@
 
     <div class="container">
       <div class="card-deck mb-3 text-center">
-        <div id="duration-toggle" class="card mb-4 shadow-sm" style="">
+        <div id="duration-toggle" class="card mb-4 shadow-sm" style="background-color: #e25822; color:white;">
           <div class="card-header">
             <h4 id="title-toggle" class="my-0 font-weight-normal">Pay Monthly</h4>
           </div>
@@ -177,6 +184,8 @@
             <ul class="list-unstyled mt-3 mb-4">
               <li>Full price.</li>
               <li style="visibility:hidden;">Help center access</li>
+              <li>Click Here!</li>
+              <li style="visibility:hidden;"></li>
             </ul>
           </div>
         </div>
@@ -273,7 +282,7 @@
       </div>
     </div>
 
-    <div id="exploreplan"></div>
+    <!-- <div id="exploreplan"></div> -->
   </div>
 
   <div id="footer"></div>
