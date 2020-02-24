@@ -1,3 +1,36 @@
+document.getElementById('type-dog').checked = true;
+
+var catObj = document.getElementsByClassName('catOption');
+var dogObj = document.getElementsByClassName('dogOption');
+
+for (i=0; i<catObj.length; i++) {
+  catObj[i].hidden = false;
+}
+document.getElementById('type-cat').onclick = function(){
+  document.getElementById('pet-breed').value = 'persian';
+
+  for (i=0; i<catObj.length; i++) {
+    catObj[i].hidden = false;
+  }
+
+  for (i=0; i<dogObj.length; i++) {
+    dogObj[i].hidden = true;
+  }
+};
+
+document.getElementById('type-dog').onclick = function(){
+  document.getElementById('pet-breed').value = 'gRetriever';
+
+  for (i=0; i<catObj.length; i++) {
+    catObj[i].hidden = true;
+  }
+
+  for (i=0; i<dogObj.length; i++) {
+    dogObj[i].hidden = false;
+  }
+};
+
+
 document.getElementById('duration-toggle').onclick = function(){
   if (document.getElementsByClassName("annual-sub")[0].style.display == "none") {
     var cardHide = document.getElementsByClassName("monthly-sub");
