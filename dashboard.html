@@ -23,6 +23,7 @@
   <!-- Navigation -->
   <div id="navbar"></div>
   <img id="dash" style="width: 100%; margin-top: 6.5rem;" src="img/wireframe-dashboard-1.png"></img>
+  <img id="dashmissing" style="width: 100%; display:none;" src="img/wireframe-dashboard-missing-2.png"></img>
   <img id="dash2" style="width: 100%; display:none;" src="img/wireframe-dashboard-2.png"></img>
   <img id="dash3" style="width: 100%; display:none; margin-top: 6.5rem" src="img/wireframe-dashboard-3.png"></img>
   <img id="dash4" style="width: 100%; display:none; margin-top: 6.5rem" src="img/wireframe-dashboard-4.png"></img>
@@ -41,8 +42,13 @@
   <script type="text/javascript">
     document.getElementById("dash").onclick = function(){
       document.getElementById("dash").style.display = "none";
+      document.getElementById("dashmissing").style.display = "block";
+    };
+    document.getElementById("dashmissing").onclick = function(){
+      document.getElementById("dashmissing").style.display = "none";
       document.getElementById("dash2").style.display = "block";
     };
+
     document.getElementById("dash2").onclick = function(){
       document.getElementById("dash2").style.display = "none";
       document.getElementById("dash3").style.display = "block";
