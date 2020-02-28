@@ -204,7 +204,9 @@ var exploreplan = React.createElement(
   )
 );
 
-ReactDOM.render(navbar, document.getElementById('navbar'));
+if (document.getElementById('navbar')) {
+  ReactDOM.render(navbar, document.getElementById('navbar'));
+}
 
 if (document.getElementById('exploreplan')) {
   ReactDOM.render(exploreplan, document.getElementById('exploreplan'));
