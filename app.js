@@ -133,8 +133,8 @@ var footer = React.createElement(
             " ",
             React.createElement(
               "a",
-              { style: { textDecoration: 'underline' }, href: "mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon" },
-              "RIdiculla@newportcapitalgroup.com"
+              { style: { textDecoration: 'underline' }, href: "mailto:raj.idiculla@gmail.com?Subject=VetWellSoon" },
+              "raj.idiculla@gmail.com"
             )
           )
         )
@@ -169,7 +169,7 @@ var footer = React.createElement(
       "\xA9 2020 Copyright:",
       React.createElement(
         "a",
-        { href: "https://mdbootstrap.com/education/bootstrap/" },
+        { href: "#" },
         " VetWellSoon"
       )
     )

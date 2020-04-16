@@ -41,7 +41,7 @@ const footer = (
           <div>
             <h5>Contact Us:</h5>
             <p><i className="icon-phone" /> (123) 456-7890 - (123) 555-8890<br />
-              <i className="icon-envelope-alt" /> <a style={{textDecoration: 'underline'}} href="mailto:RIdiculla@newportcapitalgroup.com?Subject=VetWellSoon">RIdiculla@newportcapitalgroup.com</a></p>
+              <i className="icon-envelope-alt" /> <a style={{textDecoration: 'underline'}} href="mailto:raj.idiculla@gmail.com?Subject=VetWellSoon">raj.idiculla@gmail.com</a></p>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ const footer = (
         </div>
       </div>
       <div className="footer-copyright text-center" style={{paddingTop: '1rem'}}>© 2020 Copyright:
-        <a href="https://mdbootstrap.com/education/bootstrap/"> VetWellSoon</a>
+        <a href="#"> VetWellSoon</a>
       </div>
     </footer>
   </section>
